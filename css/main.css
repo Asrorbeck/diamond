@@ -34,48 +34,48 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"),
-    url("../fonts/inter-v13-latin-regular.ttf") format("truetype");
+  src: url(../fonts/inter-v13-latin-regular.woff2) format("woff2"),
+    url(../fonts/inter-v13-latin-regular.ttf) format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/inter-v13-latin-500.woff2") format("woff2"),
-    url("../fonts/inter-v13-latin-500.ttf") format("truetype");
+  src: url(../fonts/inter-v13-latin-500.woff2) format("woff2"),
+    url(../fonts/inter-v13-latin-500.ttf) format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/inter-v13-latin-600.woff2") format("woff2"),
-    url("../fonts/inter-v13-latin-600.ttf") format("truetype");
+  src: url(../fonts/inter-v13-latin-600.woff2) format("woff2"),
+    url(../fonts/inter-v13-latin-600.ttf) format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2"),
-    url("../fonts/inter-v13-latin-700.ttf") format("truetype");
+  src: url(../fonts/inter-v13-latin-700.woff2) format("woff2"),
+    url(../fonts/inter-v13-latin-700.ttf) format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/inter-v13-latin-800.woff2") format("woff2"),
-    url("../fonts/inter-v13-latin-800.ttf") format("truetype");
+  src: url(../fonts/inter-v13-latin-800.woff2) format("woff2"),
+    url(../fonts/inter-v13-latin-800.ttf) format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
-    url("../fonts/roboto-v30-latin-regular.ttf") format("truetype");
+  src: url(../fonts/roboto-v30-latin-regular.woff2) format("woff2"),
+    url(../fonts/roboto-v30-latin-regular.ttf) format("truetype");
 }
 html {
   scroll-behavior: smooth;
@@ -85,6 +85,16 @@ button {
   border: none;
   background: none;
   outline: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 .container {
   max-width: 1240px;
@@ -145,7 +155,7 @@ button {
 .header__burger {
   display: none;
   border: none;
-  background: rgba(0, 0, 0, 0);
+  background: #fff0;
   cursor: pointer;
   padding: 0;
   z-index: 1001;
@@ -177,7 +187,7 @@ button {
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
     padding: 20px;
     z-index: 1000;
   }
@@ -186,7 +196,7 @@ button {
   }
 }
 .hero {
-  background-image: url("../img/hero-bg.png");
+  background-image: url(../../img/hero-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -264,7 +274,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(0 0 0 / 0.5);
   }
   .hero__container {
     z-index: 200;
@@ -376,7 +386,7 @@ button {
 }
 .stat__body-header {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #3f8ac2;
   margin-bottom: 20px;
 }
@@ -438,7 +448,7 @@ button {
   position: absolute;
   width: 39px;
   height: 34px;
-  background-image: url("../img/diamond.svg");
+  background-image: url(../../img/diamond.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -594,18 +604,18 @@ button {
 .ribbon__body:nth-child(1)::before {
   width: 44px;
   height: 44px;
-  background-image: url("../img/t-icon.svg");
+  background-image: url(../../img/t-icon.svg);
 }
 .ribbon__body:nth-child(2)::before {
   width: 68px;
   height: 68px;
   top: calc(0% - 5px);
-  background-image: url("../img/trucl-icon.svg");
+  background-image: url(../../img/trucl-icon.svg);
 }
 .ribbon__body:nth-child(3)::before {
   width: 37px;
   height: 45px;
-  background-image: url("../img/g-icon.svg");
+  background-image: url(../../img/g-icon.svg);
 }
 @media (max-width: 768px) {
   .ribbon__body {
@@ -713,13 +723,13 @@ button {
 }
 .contact__header {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 20px;
   color: #1d78bc;
   text-align: center;
 }
 .contact__input {
-  background-color: rgba(71, 166, 255, 0.08);
+  background-color: hsl(209 100% 64% / 0.08);
   padding: 18px 20px;
   width: 100%;
   max-width: 350px;
@@ -730,7 +740,7 @@ button {
 .contact__subheader {
   margin-bottom: 30px;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 .contact__wrapper {
@@ -743,7 +753,7 @@ button {
   background-color: #1d78bc;
   padding: 18px 40px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   cursor: pointer;
   border-radius: 8px;
@@ -784,7 +794,7 @@ button {
   }
 }
 .apply {
-  background-image: url("../img/contact.png");
+  background-image: url(../../../img/contact.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -803,7 +813,7 @@ button {
   transition: background-color 0.3s;
 }
 .apply__btn:hover {
-  background-color: rgba(0, 87, 179, 0.705);
+  background-color: rgb(0 87 179 / 0.705);
 }
 .apply__main-wrapper {
   display: flex;
@@ -1105,7 +1115,7 @@ button {
 }
 .footer__bottom-body {
   font-size: 12px;
-  color: #6c757d;
+  color: #343a40;
   text-align: center;
   margin-top: 20px;
 }
@@ -1121,4 +1131,4 @@ button {
 .privacy__add {
   word-break: break-all;
   overflow-wrap: break-word;
-} /*# sourceMappingURL=main.css.map */
+}
